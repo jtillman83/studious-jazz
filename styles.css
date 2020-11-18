@@ -14,29 +14,49 @@ body {
 #ulem,
 #msimbo {
   display: flex;
-  border: 1px solid red;
   padding: .67em;
   max-width: max-content;
 }
 
+#topsection {
+  display: flex;
+  border: 2px solid red;
+}
+
+h2 {
+  border: 2px solid red;
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+}
+
+
 .aboutus {
   border: 2px solid black;
   border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  max-width: max-content;
-}
-
-.us   {
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
+  max-width: max-content;
+}
+.us {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  height: 300px;
+  width: 16em;
 }
 
-h2{
-  width: max-content;
+#nav-contianer {
+  border: 2px solid pink;
 }
+
+#images {
+  border: 1px solid red;
+}
+
+
+
+
 #footer {
   border: 2px solid red;
   width: 100%;
@@ -61,6 +81,7 @@ button {
   margin-right: 10px;
   margin-left: 10px;
 } 
+
 /**
 .login {
   display: flex;
