@@ -20,7 +20,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 25em;
+}
+.programoverview p {
+  display: flex;
+  align-items: center;
+}
+#snapshot {
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+}
+.syllabutton {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
 }
 #ulem,
 #msimbo {
