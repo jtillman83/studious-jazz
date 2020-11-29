@@ -72,6 +72,11 @@ h2 {
   margin-top: 1em;
   align-items: flex-start;
 }
+#stats { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .nav { 
   display: flex;
   flex-direction: column;
@@ -83,7 +88,7 @@ h2 {
 .item {
   outline: none;
   border-radius: 5px;
-  margin: 10px;
+  margin: 15px;
   font-size: large;
   padding: 15px;
   
@@ -121,20 +126,8 @@ h2 {
   margin-right: 10px;
   margin-left: 10px;
   outline: none;
-} 
-
-/**
-.login {
-  display: flex;
-  border: 1px solid red;
-  flex-direction: row;
-  justify-content: space-between;
 }
-.register {
-  display: flex; 
-  border: 1px solid red;
-  justify-content: space-between;
-} **/
+
 @media (max-width: 475px) {
   body {
     flex-direction: column;
