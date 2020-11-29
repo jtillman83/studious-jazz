@@ -1,44 +1,98 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1em;
+}
 body { 
-  background-color: lightgrey;
+  font-size: 16px;
+  color: black;
  }
  
 #middle { 
   max-width: none;
   max-height: none;
   background-color: #F8F9FA;
-  border: 2px solid black;
   border-radius: 8px;
   padding: .67em;
+}
+.programoverview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 25em;
 }
 #ulem,
 #msimbo {
   display: flex;
-  border: 1px solid red;
   padding: .67em;
-  max-width: max-content;
+}
+
+#topsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-bottom: 0;
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+}
+.topheader {
+  display: flex;
+  justify-content: center;
 }
 
 .aboutus {
-  border: 2px solid black;
+  min-width: 20em;
+  max-width: 50em;
   border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  max-width: max-content;
-}
-
-.us   {
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
+  justify-content: center;
+}
+.us {
+  display: flex;
+  margin-top: 1em;
+  align-items: flex-start;
+}
+#stats { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  padding: 10px;
+}
+.item {
+  outline: none;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: large;
+  padding: 15px;
+  
+}
+.item:hover {
+  cursor: pointer;
+  background-color: dimgray;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+#images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
 }
 
-h2{
-  width: max-content;
-}
 #footer {
-  border: 2px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -46,33 +100,20 @@ h2{
   margin-bottom: 0;
 
 }
-#buttons {
-  padding: 20px;
-}
-button {
-  border: 1em;
-  border-radius: 4px;
-  line-height: 2.5;
-  padding: 0 20px;
+.login,
+.register {
+  border-radius: 5px;
+  padding: 15px;
   color: black;
-  font-size: 100%;
+  font-size: large;
   background-color: #F8F9FA;
   display: inline-flex;
+  margin-top: 2em;
   margin-right: 10px;
   margin-left: 10px;
-} 
-/**
-.login {
-  display: flex;
-  border: 1px solid red;
-  flex-direction: row;
-  justify-content: space-between;
+  outline: none;
 }
-.register {
-  display: flex; 
-  border: 1px solid red;
-  justify-content: space-between;
-} **/
+
 @media (max-width: 475px) {
   body {
     flex-direction: column;
